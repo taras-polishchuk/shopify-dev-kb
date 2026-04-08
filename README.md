@@ -1,6 +1,95 @@
-# Svelte + TS + Vite
+# Shopify Dev Knowledge Base
 
-This template should help get you started developing with Svelte and TypeScript in Vite.
+> A personal reference app for Shopify theme development. Browse and search categorized Liquid, JavaScript, CSS, Schema, and CLI snippets — built with Svelte 5, TypeScript, Tailwind CSS v4, and Vite. Syntax-highlighted code blocks with one-click copy.
+
+**Live demo:** https://taras-polishchuk.github.io/shopify-dev-kb/
+
+---
+
+## Features
+
+- **Categorized knowledge base** — 9 categories: Liquid, Themes, Schema, Shopify CLI, Metafields, JavaScript, CSS, Performance, Debugging
+- **Subcategory navigation** — Basics, Filters, Objects, Sections, Templates, Cart API, AJAX, Responsive, General
+- **Tag filtering** — filter by `basic`, `advanced`, `interview`, `snippet`, `performance`, and more
+- **Instant search** — real-time filtering across titles, descriptions, and code snippets
+- **Syntax highlighting** — code blocks highlighted for Liquid, JavaScript, JSON, and CSS
+- **One-click copy** — copy any code snippet to clipboard
+- **Sidebar navigation** — jump directly to any category or subcategory
+- **Responsive layout** — works on desktop and mobile
+
+## Tech stack
+
+| Layer | Detail |
+|-------|--------|
+| Framework | Svelte 5 (runes) |
+| Language | TypeScript |
+| Styles | Tailwind CSS v4 |
+| Build | Vite |
+| Highlighting | Highlight.js |
+| i18n | Custom i18n util |
+
+## Project structure
+
+```
+src/
+├── App.svelte
+├── main.ts
+├── app.css
+├── components/
+│   ├── Header.svelte
+│   ├── Sidebar.svelte
+│   ├── HomePage.svelte
+│   ├── ContentPage.svelte
+│   ├── CodeBlock.svelte
+│   └── TagBadge.svelte
+├── data/
+│   ├── entries.ts      # all knowledge base content
+│   └── types.ts        # Category, Subcategory, Tag, Entry types
+└── lib/
+    ├── highlight.ts    # syntax highlighting setup
+    ├── i18n.ts         # internationalisation helpers
+    └── store.svelte.ts # global state (Svelte runes)
+```
+
+## Getting started
+
+```bash
+npm install
+npm run dev       # start dev server at http://localhost:5173
+npm run build     # production build → dist/
+npm run preview   # preview production build locally
+npm run check     # TypeScript + Svelte type check
+```
+
+## Adding a new entry
+
+Open `src/data/entries.ts` and append an object to the `entries` array:
+
+```ts
+{
+  id: 'unique-kebab-id',
+  category: 'Liquid',          // see types.ts for valid values
+  subcategory: 'Filters',
+  title: 'My New Snippet',
+  description: 'What it does and when to use it.',
+  tags: ['basic', 'liquid'],
+  snippets: [
+    {
+      label: 'Example usage',
+      language: 'liquid',
+      code: `{{ product.price | money }}`,
+    },
+  ],
+  notes: 'Optional extra notes displayed below code blocks.',
+},
+```
+
+The entry will appear immediately in the sidebar and be searchable.
+
+## Motivation
+
+Built to have a fast, offline-capable personal reference while doing Shopify theme development — instead of constantly searching the Shopify docs.
+
 
 ## Recommended IDE Setup
 
