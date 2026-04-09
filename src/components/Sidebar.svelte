@@ -25,7 +25,7 @@
 </script>
 
 <nav
-  class="h-full overflow-y-auto py-4 px-3 space-y-1
+  class="h-full py-4 px-3 space-y-1
          transition-all duration-300"
   aria-label="Sidebar navigation"
 >

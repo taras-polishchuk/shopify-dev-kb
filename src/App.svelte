@@ -25,7 +25,7 @@
              {appState.sidebarOpen ? 'w-64' : 'w-0'}"
       aria-hidden={!appState.sidebarOpen}
     >
-      <div class="w-64">
+      <div class="w-64 h-full overflow-y-auto">
         <Sidebar />
       </div>
     </aside>
