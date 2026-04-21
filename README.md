@@ -1,71 +1,40 @@
-# 🛍️ Shopify Dev KB
+# Shopify Dev KB
 
-A fast, searchable knowledge base for Shopify theme development — built to speed up everyday work with Liquid, JavaScript, and theme customization.
+A searchable reference app for Shopify theme development — Liquid patterns, JS snippets, and theme customization techniques I actually use on client projects.
 
-👉 Live demo: https://taras-polishchuk.github.io/shopify-dev-kb/
-
----
-
-## 🚀 Overview
-
-Shopify Dev KB is a personal developer tool that helps quickly find and reuse common patterns when working with Shopify themes.
-
-Instead of digging through docs or old projects, everything is organized, searchable, and ready to copy.
+**Live:** https://taras-polishchuk.github.io/shopify-dev-kb/
 
 ---
 
-## ⚡ Key Features
+## What it is
 
-- 🔍 **Instant search** across snippets and patterns  
-- 🧩 **Categorized content** (Liquid, JS, UI, performance)  
-- 📋 **Copy-ready code snippets**  
-- ⚡ **Fast, lightweight UI** — no unnecessary complexity  
-- 🧠 Built from real-world Shopify tasks  
+When working across multiple Shopify stores, you constantly reach for the same patterns — metafield output, section schema structure, product form logic, JS cart API calls. This app is my personal indexed library of those patterns, built so I can find and copy exactly what I need in seconds.
+
+It's built from real work, not documentation rewrites.
 
 ---
 
-## 💡 Why I built this
+## Features
 
-Working on Shopify stores often involves repeating similar patterns:
-- product logic in Liquid  
-- UI interactions in JavaScript  
-- theme customization tasks  
-
-This tool helps reduce friction and move faster by keeping everything in one place.
+- Instant search across all snippets
+- Categorized by topic: Liquid, JavaScript, UI, performance
+- Copy-ready code blocks
+- Fast, lightweight — Svelte + Tailwind, no bloat
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-- Svelte  
-- TypeScript  
-- Tailwind CSS  
-
----
-
-## 📌 What it shows
-
-This project reflects how I work as a developer:
-
-- focus on **efficiency and speed**  
-- building **reusable solutions**  
-- organizing knowledge for real-world use  
-- writing clean, practical code  
+- Svelte 5
+- TypeScript
+- Tailwind CSS
+- Vite · GitHub Actions → GitHub Pages
 
 ---
 
-## 👨‍💻 About me
+## My Shopify work
 
-Shopify Theme Developer focused on building clean, high-converting storefronts.
+This is one of several tools I've built around my Shopify development practice. I work on real stores — bug fixes, custom sections, UI improvements, OS 2.0 theme migrations.
 
-I help with:
-- theme customization  
-- custom sections & UI components  
-- performance improvements  
-- fixing and improving existing stores  
-
----
-
-## ⭐️
-
-If you find it useful — feel free to star or use it as inspiration.
+→ Full portfolio: [taras-polishchuk.github.io](https://taras-polishchuk.github.io)  
+→ Contact: [poli.taras.shchuk@gmail.com](mailto:poli.taras.shchuk@gmail.com)
